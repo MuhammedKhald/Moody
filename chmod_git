@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Please enter a chmod aname:"
+read chmod_
+
+chmod +x ${chmod_}
+
+echo "Please enter a commit name: "
+read new_commit
+
+git add .
+git commit -m "${new_commit}"
+git push
+
